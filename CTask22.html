@@ -1,0 +1,34 @@
+<script>
+/* Create a base class Employee with properties for name and salary, and a method to display the details 
+of the employee. Then create a derived class Manager that adds a property for the department and a 
+method to display the full details of the manager, including their department. */
+class Employee
+{
+	constructor(name,salary)
+	{
+		this.name=name;
+		this.salary=salary;
+	}
+	display()
+	{
+		document.write("Name : "+this.name+ "</br>Salary:  "+this.salary)
+	}
+}
+class Manager extends Employee
+{
+	constructor(name,salary,dept)
+	{
+		super(name,salary)
+		this.dept=dept
+		
+	}
+	mdisplay()
+	{
+		document.write("</br>Manager Details:  ")
+		document.write("</br>Name : "+this.name+ "</br>Salary:  "+this.salary+"</br>Department: "+this.dept)
+	}
+}
+obj=new Manager("Arun",200000,"Game Developer")
+obj.display()
+obj.mdisplay()
+</script>

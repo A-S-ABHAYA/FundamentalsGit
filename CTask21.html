@@ -1,0 +1,34 @@
+<script>
+/* Create a base class Vehicle with properties for brand and speed, and a method to 
+display these details. Then create a derived class Car that adds a property for 
+fuelType and a method to calculate the time needed to travel a given distance. */
+class Vehicle
+{
+	constructor(brand,speed)
+	{
+		this.brand=brand;
+		this.speed=speed;
+	}
+	display()
+	{
+		document.write("Brand : "+this.brand+ "</br>Speed:  "+this.speed)
+	}
+}
+class Car extends Vehicle
+{
+	constructor(brand,speed,fuelType)
+	{
+		super(brand,speed)
+		this.fuelType=fuelType
+		this.time
+	}
+	calculate(distance)
+	{
+		this.time=distance/this.speed
+		document.write("</br>Time:"+this.time)
+	}
+}
+obj=new Car("Ford",20,"Petrol")
+obj.display()
+obj.calculate(100)
+</script>

@@ -1,0 +1,25 @@
+<script>
+class Student
+{
+	constructor(name, age)
+	{
+		this.name=name
+		this.age=age
+		this.average=0	
+	}
+	avg(gr1,gr2,gr3)
+	{
+		document.write("The name is:"+this.name+"</br>Age is"+this.age+"years.")
+		this.average=(gr1+gr2+gr3)/3
+		document.write("</br>Average of grade of students :"+this.average)
+	}
+}
+	n=prompt("Enter the name:")
+	a=Number(prompt("Enter the age:"))
+	var obj =new Student(n, a)
+	obj.avg(100,200,600)
+
+</script>
+
+
+

@@ -1,0 +1,19 @@
+
+
+
+<script>
+	// Function to find the average from an array of  number
+	function avg(num=[])
+	{
+		s=0;
+		for (i in num)
+		{
+			s+=num[i];
+		}
+		avr=s/num.length
+		return avr
+		
+	}
+	result=avg([1,2,3,4]);
+	document.write(result);
+</script>

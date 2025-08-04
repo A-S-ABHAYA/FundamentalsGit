@@ -1,0 +1,25 @@
+<script>
+class Book
+{
+	constructor(title,author)
+	{
+		this.title=title;
+		this.author=author;
+		this.discprice=0;
+		
+	}
+	discount(price,dis)
+	{
+		document.write("Title of the book:"+this.title+"</br>Author of the book:"+this.author+"</br>Orginal price:"+price)
+		this.discprice=price-(price*(dis/100));
+		document.write("</br>Discount price:"+this.discprice);
+	}
+}
+t=prompt("Enter the title:")
+a=prompt("Enter the author:")
+p=Number(prompt("Enter the orginal price"));
+d=Number(prompt("Enter the discount to be applied:"));
+var obj=new Book(t,a)
+obj.discount(p,	d)
+</script>	
+		

@@ -1,0 +1,21 @@
+<script>
+	class Circle
+	{
+		constructor(rad)
+		{
+			this.radius=rad;
+			this.area=0;
+			this.circum=0;
+		}
+		calculate()
+		{
+			this.area=3.14*this.radius*this.radius;
+			this.circum=2*3.14*this.radius;
+			document.write("Area of the circle:"+this.area);
+			document.write("</br>Circumference of the circle:"+this.circum);
+		}
+	}
+	r=Number(prompt("Enter the radius:"))
+	var obj =new Circle(r)
+	obj.calculate()	
+</script>

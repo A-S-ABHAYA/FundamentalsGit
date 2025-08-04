@@ -1,0 +1,28 @@
+<script>
+	// Create JSON object of food having Indian and Chinese food
+  
+  food = { 
+		indian: { 
+				rice:
+					{ 
+					  r1: "plain rice",
+					  r2: { 
+						"biriyani": { b1: "chicken biriyani", b2: "beef biriyani" , b3: "mutton biriyani" }
+					       }
+			                },
+			        dosa : { d1: "plain dosa" , d2: "masala dosa" ,d3: "ghee roast"}
+			    },
+		chinese: { 
+				 noodles : { n1: "egg noodles", n2: "mixed noodles", n3: "chicken noodles", n4: "schezwan noodles"} ,
+				 fried_rice: "fried rice "
+			      }
+	    };
+           document.write(food.indian.rice.r1+"</br>");
+	   document.write(food.indian.rice.r2.biriyani.b3+"</br>");
+	   document.write(food["chinese"]["fried_rice"]+"</br>");
+	   document.write(food["chinese"]["noodles"]["n2"]+"</br>");
+           document.write(food["chinese"]["noodles"]+"</br>"); //[object Object]
+	   //document.write(food[indian][rice][r1]);
+</script>		
+		
+						

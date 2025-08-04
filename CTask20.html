@@ -1,0 +1,34 @@
+<script>
+	/* Create a base class Person with properties for name and age, and a method to 
+display this information. Create a derived class Student that adds a property for the 
+grade and a method to display the student's full details. */
+class Person
+{
+	constructor( name ,age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+	display()
+	{
+		document.write("Name : "+this.name+ "</br>Age:  "+this.age)
+	}
+}
+class Student extends Person
+{
+	constructor(name, age, grade)
+	{
+		super(name,age)
+	
+		this.grade=grade;
+	}
+	details()
+	{
+		document.write("</br> STUDENT FULL DETAILS")
+		document.write("</br>Name: "+this.name+"</br>Age: "+this.age+"</br> Grade: "+this.grade)
+	}
+}
+obj=new Student("ABHAYA",21,"A")
+obj.display()
+obj.details()
+</script>

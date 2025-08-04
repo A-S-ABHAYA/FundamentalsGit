@@ -1,0 +1,26 @@
+<script>
+class Person
+{
+	constructor(name,age)
+	{
+		this.name=name
+		this.age=age
+	}
+	check()
+	{
+		document.write("The age of "+this.name+"is "+this.age+"!")
+		if(this.age>17)
+		{
+			document.write("</br>He/she is an Adult")
+		}
+		else
+		{
+			document.write("He or she is a minor!!")
+		}
+	}
+}
+nam=prompt("Enter the name:")
+agee=Number(prompt("Enter the age:"))
+var obj=new Person(nam,agee)
+obj.check()
+</script>
